@@ -1,33 +1,231 @@
-.App {
+.Header {
+  position: fixed;
+  background-color: grey;
+  width: 100%;
+  height: auto;
+  font-family: 'Play', sans-serif;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  border-color: #3f3f44;
+  border-width: 0.07vw;
+  border-bottom-style: solid;
+}
+
+.TopButtons {
+
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  float: right;
+  padding: 1rem 1rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.Name {
+  color: white;
+  align-self: flex-start;
+  flex-grow: 2;
+  padding-left: 1rem;
+  margin: auto;
+  font-size: 30px;
+}
+
+.TopButtons:hover {
+  color: #3f3f44;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: grey;
+}
+
+.particles {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.Empty {
+  z-index: 1;
+  height: 100vh;
+}
+
+.About {
+  width: 100%;
+  height: 48vw;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.About img{
+  width: 25%;
+  float: left;
+  margin: 6%;
+  border-radius: 5%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.About h1{
+  font-family: 'Play', sans-serif;
+  color: #3f3f44;
+  text-align: center;
+}
+
+.Bio {
+  width: 85%;
+  height: 40vw;
+  background-color: white;
+  display: inline-block;
+  position: relative;
+  margin: 4vw;
+  border-radius: 1%;
+}
+
+.Bio p{
+  font-size: 1.5vw;
+  text-align: left;
+}
+
+.Proj {
+  width: 100%;
+  height: 120vw;
+  text-align: center;
+}
+
+.Projbubble {
+  width: 85%;
+  height: 113vw;
+  background-color: white;
+  display: inline-block;
+  position: relative;
+  margin: 4vw;
+  border-radius: 1%;
+}
+
+.box {
+  height: 30vw;
+  border-radius: 1%;
+}
+
+.box {
+  font-size: 1.5vw;
+}
+
+.box img{
+  width: 25%;
+  float: left;
+  margin: 5%;
+  border-radius: 5%;
+}
+
+.box p{
+  text-align: left;
+}
+
+.Projbubble h1{
+  font-family: 'Play', sans-serif;
+  color: #3f3f44;
+  text-align: center;
+}
+
+.box h1{
+  font-family: 'Play', sans-serif;
+  color: #3f3f44;
+  text-align: left;
+}
+
+.box button{
   color: white;
+  height: 3vw;
+  width: 10vw;
+  background-color: #3f3f44;
+  border: none;
+  border-radius: 5%;
+  font-size: 1vw;
 }
 
-.App-link {
-  color: #61dafb;
+.button:hover {
+  background-color: #0074D9;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#pk {
+  border: 1px solid black;
+  height: 18vw;
+}
+
+.vid {
+  width: 25%;
+  float: left;
+  margin: 5%;
+  height: 20vw;
+}
+
+.contact {
+  width: 100%;
+  height: 50vw;
+  text-align: center;
+}
+
+.contactbubble {
+  width: 85%;
+  height: 33vw;
+  background-color: white;
+  display: inline-block;
+  position: relative;
+  margin: 4vw;
+  border-radius: 1%;
+
+}
+
+.contactbubble h1{
+  font-family: 'Play', sans-serif;
+  color: #3f3f44;
+  text-align: center;
+}
+
+.conbut {
+  height: 6vw;
+  text-align: center;
+  margin: 4%;
+  background-color: #3f3f44;
+  border-color: #3f3f44;
+  border-radius: 5%;
+  color: white;
+  width: 16vw;
+  font-size: 1.8vw;
+}
+
+.conbut:hover {
+  background-color: #0074D9;
+  cursor: pointer;
+  border-color: #0074D9;
+  border-radius: 5%;
+}
+
+.contactbubble p{
+  font-size: 2vw;
+}
+
+.contactbubble p2{
+  font-size: 1.5vw;
+}
+
+.contactbubble p3{
+  font-size: 1.5vw;
+  color: #0074D9;
 }
